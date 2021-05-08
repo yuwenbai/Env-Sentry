@@ -36,7 +36,7 @@ function App() {
         data[val] = key;
       },
       get(key) {
-        console.log(' createCache ', data)
+        console.log(" createCache ", data);
         return data[key];
       },
     };
@@ -50,20 +50,20 @@ function App() {
     // fn();
 
     const obj = {
-      name: 'New_Name',
+      name: "New_Name",
       greet: function () {
-       console.log(this); 
-       //{name: "New_Name", greet: ƒ}  
-      //  setTimeout(function () {
-      //    console.log(this);
-      //    //Window {parent: Window, opener: null, top: Window, length: 0, frames: Window, …} 
-      //  });
-      setTimeout(() => {
-        console.log(this) 
-      });
-      }    
-     }
-     obj.greet();
+        console.log(this);
+        //{name: "New_Name", greet: ƒ}
+        //  setTimeout(function () {
+        //    console.log(this);
+        //    //Window {parent: Window, opener: null, top: Window, length: 0, frames: Window, …}
+        //  });
+        setTimeout(() => {
+          console.log(this);
+        });
+      },
+    };
+    obj.greet();
 
     let c = createCache();
     c.set("a", 101);
@@ -178,7 +178,7 @@ function App() {
 
       <div className="testBase">
         {/* <div className="baseA"/> */}
-        <div className="baseB"/>
+        <div className="baseB" />
       </div>
     </div>
   );
