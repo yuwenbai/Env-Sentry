@@ -5,10 +5,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as Sentry from "@sentry/react";
 import { Integrations } from "@sentry/tracing";
-import RSentry  from './RSentry'
-RSentry.initself()
-console.log(' RSentry is ', RSentry)
-window.RSentry = RSentry
+// import RSentry  from './RSentry'
+// RSentry.initself()
+// console.log(' RSentry is ', RSentry)
+// window.RSentry = RSentry
 console.log(' window.RSentry is ', window.RSentry)
 Sentry.init({
   dsn: "https://2e863aaa12c24e5fa284cd9b0acd820a@o290113.ingest.sentry.io/5735747",
